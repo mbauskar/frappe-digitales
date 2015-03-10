@@ -358,6 +358,8 @@ class Document(BaseDocument):
 			return
 
 		for fieldname, msg in missing:
+			print 'missing field--------------------------'
+			print fieldname
 			msgprint(msg)
 
 		raise frappe.MandatoryError(", ".join((each[0] for each in missing)))
