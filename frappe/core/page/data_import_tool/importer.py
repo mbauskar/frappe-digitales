@@ -192,6 +192,7 @@ def upload(rows = None, submit_after_import=None, ignore_encoding_errors=False, 
 		doc = None
 
 		doc = get_doc(row_idx)
+		#frappe.errprint(doc)
 		try:
 			frappe.local.message_log = []
 			if parentfield:
