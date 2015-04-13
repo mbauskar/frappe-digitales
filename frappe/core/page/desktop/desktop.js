@@ -68,7 +68,6 @@ frappe.desktop.render = function() {
 	// modules
 	var modules_list = frappe.user.get_desktop_items();
 	var user_list = frappe.user.get_user_desktop_items();
-	console.log(modules_list)
 	$.each(modules_list, function(i, m) {
 		var module = frappe.modules[m];
 		if(module) {
